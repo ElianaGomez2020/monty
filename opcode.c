@@ -1,4 +1,4 @@
-#include "head.h"
+#include "monty.h"
 /**
  *opcode_fun - check for opcod associated function and execute
  * @opcode: opcode from user input
@@ -18,6 +18,7 @@ int opcode_fun(char *opcode, stack_t **stack, unsigned int line_number)
 		{"swap", swap},
 		{"add", _add},
 		{"pop", pop},
+		{"nop", nop},
 		{NULL, NULL}
 	};
 	for (i = 0; opcod[i].opcode != NULL; i++)

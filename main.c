@@ -1,7 +1,7 @@
-#include "head.h"
+#include "monty.h"
 
 /**
- * main - Entry point
+ * main - Entry pointcode
  * @argc: number of arguments
  * @argv: pointer to array of strings of arguments
  * Return: 0 on success, -1 on failure

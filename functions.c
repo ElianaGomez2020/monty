@@ -1,4 +1,4 @@
-#include "head.h"
+#include "monty.h"
 /**
  *pall- pushes an element to the stack.
  *@stack: pointer to stack
