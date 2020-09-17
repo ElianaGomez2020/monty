@@ -1,5 +1,5 @@
 #ifndef HEAD_H
-#define HEAD_H 
+#define HEAD_H
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -23,9 +23,9 @@
  */
 typedef struct stack_s
 {
-        int n;
-        struct stack_s *prev;
-        struct stack_s *next;
+	int n;
+	struct stack_s *prev;
+	struct stack_s *next;
 } stack_t;
 
 /**
@@ -38,8 +38,8 @@ typedef struct stack_s
  */
 typedef struct instruction_s
 {
-        char *opcode;
-        void (*f)(stack_t **stack, unsigned int line_number);
+	char *opcode;
+	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
 int opcode_fun(char *opcode, stack_t **stack, unsigned int line_number);
@@ -53,4 +53,5 @@ void _add(stack_t **stack, unsigned int line_number);
 void nop(stack_t **stack, unsigned int line_number);
 void free_stack(stack_t **stack);
 void _free(stack_t *stack, char *line, FILE *fp);
+
 #endif /*head.h*/
